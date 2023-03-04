@@ -5,20 +5,20 @@
 class Beaver < Formula
   desc ""
   homepage "https://github.com/amalshaji/beaver"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/amalshaji/beaver/releases/download/0.1.0/beaver_0.1.0_Darwin_arm64.zip"
-      sha256 "7cfef7077474518750f65218e4ec3cffe3dbd1f0a9b090f814cffb00c2e9d0fc"
+    if Hardware::CPU.intel?
+      url "https://github.com/amalshaji/beaver/releases/download/0.2.0/beaver_0.2.0_Darwin_x86_64.zip"
+      sha256 "492094442ed0cc7aafdea374d2701a590c2e0d2ebd1c830334cb1fbd114f24d1"
 
       def install
         bin.install "beaver"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/amalshaji/beaver/releases/download/0.1.0/beaver_0.1.0_Darwin_x86_64.zip"
-      sha256 "52a221c20011b175585c5063b2609acedfb51c71d92c21d1a0da693c763164b1"
+    if Hardware::CPU.arm?
+      url "https://github.com/amalshaji/beaver/releases/download/0.2.0/beaver_0.2.0_Darwin_arm64.zip"
+      sha256 "07ac8eb8898ac43e73d3f27890eb7600efd77d8b69acdace3d81c3108cdd67b5"
 
       def install
         bin.install "beaver"
@@ -28,16 +28,16 @@ class Beaver < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amalshaji/beaver/releases/download/0.1.0/beaver_0.1.0_Linux_arm64.zip"
-      sha256 "ad12c46ba861dd2a0349b01709a65edcbfc1d7cb6b6260b4e2322bb7b80471d8"
+      url "https://github.com/amalshaji/beaver/releases/download/0.2.0/beaver_0.2.0_Linux_arm64.zip"
+      sha256 "20b82c1c7e0771f638aeeeda16b1b749f8719948faef9bb64f0dd2f25c2ca33f"
 
       def install
         bin.install "beaver"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/amalshaji/beaver/releases/download/0.1.0/beaver_0.1.0_Linux_x86_64.zip"
-      sha256 "21a5e5ab2a11b0bc4ae6c8770c56fc210968fc7524bf8ede53213b7a7a6a6563"
+      url "https://github.com/amalshaji/beaver/releases/download/0.2.0/beaver_0.2.0_Linux_x86_64.zip"
+      sha256 "ac379af77fc272ba741db6ec3ae6d00f0aea8496a78471ced9426be76ed06096"
 
       def install
         bin.install "beaver"
