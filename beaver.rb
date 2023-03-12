@@ -5,20 +5,20 @@
 class Beaver < Formula
   desc ""
   homepage "https://github.com/amalshaji/beaver"
-  version "0.2.0"
+  version "0.3.0-alpha.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/amalshaji/beaver/releases/download/0.2.0/beaver_0.2.0_Darwin_x86_64.zip"
-      sha256 "492094442ed0cc7aafdea374d2701a590c2e0d2ebd1c830334cb1fbd114f24d1"
+    if Hardware::CPU.arm?
+      url "https://github.com/amalshaji/beaver/releases/download/0.3.0-alpha.1/beaver_0.3.0-alpha.1_Darwin_arm64.zip"
+      sha256 "e7edaad3d3ca520fe081534b6430d6030786b1da447c8f1dcf4a40192a201859"
 
       def install
         bin.install "beaver"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/amalshaji/beaver/releases/download/0.2.0/beaver_0.2.0_Darwin_arm64.zip"
-      sha256 "07ac8eb8898ac43e73d3f27890eb7600efd77d8b69acdace3d81c3108cdd67b5"
+    if Hardware::CPU.intel?
+      url "https://github.com/amalshaji/beaver/releases/download/0.3.0-alpha.1/beaver_0.3.0-alpha.1_Darwin_x86_64.zip"
+      sha256 "366437bdcb1366f413768d5430bbba39830cfb2fb7d1b6105e1a0cc4eb63066d"
 
       def install
         bin.install "beaver"
@@ -28,16 +28,16 @@ class Beaver < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amalshaji/beaver/releases/download/0.2.0/beaver_0.2.0_Linux_arm64.zip"
-      sha256 "20b82c1c7e0771f638aeeeda16b1b749f8719948faef9bb64f0dd2f25c2ca33f"
+      url "https://github.com/amalshaji/beaver/releases/download/0.3.0-alpha.1/beaver_0.3.0-alpha.1_Linux_arm64.zip"
+      sha256 "d70a3c28b97960251bc103e620b4825ceca537d94ebac15358f777d098a69a44"
 
       def install
         bin.install "beaver"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/amalshaji/beaver/releases/download/0.2.0/beaver_0.2.0_Linux_x86_64.zip"
-      sha256 "ac379af77fc272ba741db6ec3ae6d00f0aea8496a78471ced9426be76ed06096"
+      url "https://github.com/amalshaji/beaver/releases/download/0.3.0-alpha.1/beaver_0.3.0-alpha.1_Linux_x86_64.zip"
+      sha256 "3b5abd7967b7f4c6e5294787438cf8b3714516f39620fe5bd670a1e9d6c49c31"
 
       def install
         bin.install "beaver"
