@@ -5,20 +5,20 @@
 class Portr < Formula
   desc ""
   homepage "https://github.com/amalshaji/portr"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/amalshaji/portr/releases/download/0.0.1/portr_0.0.1_Darwin_x86_64.zip"
-      sha256 "cd37183ecc00f04302b481828c5bce2f00a9b3548696c149bf8cdc23bb2842c4"
+      url "https://github.com/amalshaji/portr/releases/download/0.0.2/portr_0.0.2_Darwin_x86_64.zip"
+      sha256 "451d8fa3adce80028ea451e1ddf7a185ea4a3329aae156bf40fdda5d1ac60c84"
 
       def install
         bin.install "portr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/amalshaji/portr/releases/download/0.0.1/portr_0.0.1_Darwin_arm64.zip"
-      sha256 "82eae76ab9abee18a14783bb2384558573fc8fa299c46504a5c5ec560f3edf5e"
+      url "https://github.com/amalshaji/portr/releases/download/0.0.2/portr_0.0.2_Darwin_arm64.zip"
+      sha256 "0927710fe2ab1e73a1797de36da9ada6322b8ac8ce473fc2db3a8b70b3ce141b"
 
       def install
         bin.install "portr"
@@ -28,16 +28,16 @@ class Portr < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amalshaji/portr/releases/download/0.0.1/portr_0.0.1_Linux_arm64.zip"
-      sha256 "38bc4938855bdb371aa648d3ab1ae0f3f06aa0339680b8500504bc6e222f01ae"
+      url "https://github.com/amalshaji/portr/releases/download/0.0.2/portr_0.0.2_Linux_arm64.zip"
+      sha256 "ccf830a3d9985235d37d82bc38432568ff15744e3772fbf52c947914cdd6745a"
 
       def install
         bin.install "portr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/amalshaji/portr/releases/download/0.0.1/portr_0.0.1_Linux_x86_64.zip"
-      sha256 "b19efc136578d6a41b4c244e2377ec306643f7c709b6d0d65ab51d6841393d8e"
+      url "https://github.com/amalshaji/portr/releases/download/0.0.2/portr_0.0.2_Linux_x86_64.zip"
+      sha256 "f1aa7c960a64c65548d23d2a77b3aa04844695174e44c7e04e0094190a1b8b46"
 
       def install
         bin.install "portr"
