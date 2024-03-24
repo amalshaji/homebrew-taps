@@ -5,20 +5,20 @@
 class Portr < Formula
   desc ""
   homepage "https://github.com/amalshaji/portr"
-  version "0.0.4-beta"
+  version "0.0.5-beta"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/amalshaji/portr/releases/download/0.0.4-beta/portr_0.0.4-beta_Darwin_arm64.zip"
-      sha256 "673de62a71e95d4b855f3a8c616edbe2b51f066625cdef9924c76a1f021a660c"
+      url "https://github.com/amalshaji/portr/releases/download/0.0.5-beta/portr_0.0.5-beta_Darwin_arm64.zip"
+      sha256 "869df81bed2d14ea117e02aaff9894b9f9eac2b6c8802dd7be37eb14da8cca48"
 
       def install
         bin.install "portr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/amalshaji/portr/releases/download/0.0.4-beta/portr_0.0.4-beta_Darwin_x86_64.zip"
-      sha256 "224de67abbba2df8eb17aa567bb2b3be029ad21e4203692b6abb73628e75db02"
+      url "https://github.com/amalshaji/portr/releases/download/0.0.5-beta/portr_0.0.5-beta_Darwin_x86_64.zip"
+      sha256 "4bc1b107cd497c88dfbc262ff7bcae4e85874848df0435bb7ecb8334f23b19b3"
 
       def install
         bin.install "portr"
@@ -28,16 +28,16 @@ class Portr < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amalshaji/portr/releases/download/0.0.4-beta/portr_0.0.4-beta_Linux_arm64.zip"
-      sha256 "c3dcf5597629c40fa47791ba86420ff1322ca0adb6110b4fceec6168f5141ee7"
+      url "https://github.com/amalshaji/portr/releases/download/0.0.5-beta/portr_0.0.5-beta_Linux_arm64.zip"
+      sha256 "4d797b16f3aa81a13bc1736b37e783336bcfb9a538148810b3d1ec8fe592e50c"
 
       def install
         bin.install "portr"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/amalshaji/portr/releases/download/0.0.4-beta/portr_0.0.4-beta_Linux_x86_64.zip"
-      sha256 "1d57d63ec9e3ec8fb3b527132e6603c81d8bdea62141c25c29e7d9e24b026e9f"
+      url "https://github.com/amalshaji/portr/releases/download/0.0.5-beta/portr_0.0.5-beta_Linux_x86_64.zip"
+      sha256 "be21413da8a75c62583b1c9eaf5194f5853f5ee8aba7e67510069717a0fbfcf2"
 
       def install
         bin.install "portr"
