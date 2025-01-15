@@ -5,20 +5,20 @@
 class Portr < Formula
   desc ""
   homepage "https://github.com/amalshaji/portr"
-  version "0.0.26-beta"
+  version "0.0.27-beta"
 
   on_macos do
-    on_intel do
-      url "https://github.com/amalshaji/portr/releases/download/0.0.26-beta/portr_0.0.26-beta_Darwin_x86_64.zip"
-      sha256 "43fa5d02cf3ab3a70257902bce4d0c745896352a6142ebd5eb0521ae5a071b65"
+    if Hardware::CPU.intel?
+      url "https://github.com/amalshaji/portr/releases/download/0.0.27-beta/portr_0.0.27-beta_Darwin_x86_64.zip"
+      sha256 "aea32dd1a5608c26358d8258b7915d0ccdbaa209412d6226cf7533dc6b38e3d2"
 
       def install
         bin.install "portr"
       end
     end
-    on_arm do
-      url "https://github.com/amalshaji/portr/releases/download/0.0.26-beta/portr_0.0.26-beta_Darwin_arm64.zip"
-      sha256 "08d4d89320765d9e9cb474cbb55c28760d978ade9acc3c516681a186cb4af044"
+    if Hardware::CPU.arm?
+      url "https://github.com/amalshaji/portr/releases/download/0.0.27-beta/portr_0.0.27-beta_Darwin_arm64.zip"
+      sha256 "a262a2c86252d02ef698aaff3ba44e955e4b8cf90cbba342f69ab43bfc9c1c8b"
 
       def install
         bin.install "portr"
@@ -27,20 +27,20 @@ class Portr < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/amalshaji/portr/releases/download/0.0.26-beta/portr_0.0.26-beta_Linux_x86_64.zip"
-        sha256 "c3658de0b03401180e100d2a7c7e4ea8d696986fffef66b8d1325875f2ee09c7"
+        url "https://github.com/amalshaji/portr/releases/download/0.0.27-beta/portr_0.0.27-beta_Linux_x86_64.zip"
+        sha256 "5a47154cdc8476959cdd3566d887f0eabe17239a8d0cc5971f9d57e6ffc8f88b"
 
         def install
           bin.install "portr"
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/amalshaji/portr/releases/download/0.0.26-beta/portr_0.0.26-beta_Linux_arm64.zip"
-        sha256 "82d098072fd7c1907011d641ae573fc22f7cb0cde0e73c83eaf472b5d872f851"
+        url "https://github.com/amalshaji/portr/releases/download/0.0.27-beta/portr_0.0.27-beta_Linux_arm64.zip"
+        sha256 "4dee2c3fae51e1b645e35770bcddc4a0f057df90b863b7e3f60492964ec9b612"
 
         def install
           bin.install "portr"
