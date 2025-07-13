@@ -10,7 +10,7 @@ class Portr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/amalshaji/portr/releases/download/0.0.41-beta/portr_0.0.41-beta_Darwin_x86_64.zip"
-      sha256 "7884daeeb82b57514136f42502c1c7062e34539ce14cdf5e71878b8f648623e0"
+      sha256 "9e0cf1bc0fac069f4cf61f4db74356fb7a97fd89c6e7df237ed36c6af68e63f4"
 
       def install
         bin.install "portr"
@@ -18,7 +18,7 @@ class Portr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/amalshaji/portr/releases/download/0.0.41-beta/portr_0.0.41-beta_Darwin_arm64.zip"
-      sha256 "d4df46fd9764dd61d35bfa4b59d971c48f139e6e7bdcdf2e570fd76b12fbd167"
+      sha256 "a1e5da316e6030d16408775ad6bcfa490a60707887cae463d55a8be6d567dac7"
 
       def install
         bin.install "portr"
@@ -29,14 +29,14 @@ class Portr < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/amalshaji/portr/releases/download/0.0.41-beta/portr_0.0.41-beta_Linux_x86_64.zip"
-      sha256 "62eb7783a42e4d9df9f944afc02383f47228ec27e199a1da59306a2dccf1b59b"
+      sha256 "032d10a105400940f5093b0002e9b10a232798fe162182ebfda428e7e50952d2"
       def install
         bin.install "portr"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/amalshaji/portr/releases/download/0.0.41-beta/portr_0.0.41-beta_Linux_arm64.zip"
-      sha256 "32bca987ea6fef64f95d7129adcbd4b4f6ed8a7b2483c3d8c13c4bd7b84fc223"
+      sha256 "f496998d18115cf32f43f93879742a0441b3c830887054a862d1fc641e132103"
       def install
         bin.install "portr"
       end
