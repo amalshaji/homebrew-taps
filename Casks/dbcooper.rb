@@ -14,7 +14,7 @@ cask "dbcooper" do
 
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   app "DBcooper.app"
 
