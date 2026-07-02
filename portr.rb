@@ -5,20 +5,20 @@
 class Portr < Formula
   desc ""
   homepage "https://github.com/amalshaji/portr"
-  version "1.0.13"
+  version "1.0.14"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/amalshaji/portr/releases/download/v1.0.13/portr_1.0.13_Darwin_x86_64.zip"
-      sha256 "c5c943a7b9ddf445af1d2f089c64da5997b3e3f385613c9dae0865410661773b"
+      url "https://github.com/amalshaji/portr/releases/download/v1.0.14/portr_1.0.14_Darwin_x86_64.zip"
+      sha256 "7b29520b0a51a5324943acb2c2fcc9719393cc7211f781dd6495537c050af721"
 
       define_method(:install) do
         bin.install "portr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/amalshaji/portr/releases/download/v1.0.13/portr_1.0.13_Darwin_arm64.zip"
-      sha256 "63e8a4de9fb76c2bf3da22a82e7a91f5896409db1987ef306009ecd866af41ad"
+      url "https://github.com/amalshaji/portr/releases/download/v1.0.14/portr_1.0.14_Darwin_arm64.zip"
+      sha256 "b8ee5dc7a25994511856ea0a2d60cbdde3c6795b08ae5248cfaea2c8e53be3d7"
 
       define_method(:install) do
         bin.install "portr"
@@ -28,15 +28,15 @@ class Portr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amalshaji/portr/releases/download/v1.0.13/portr_1.0.13_Linux_x86_64.zip"
-      sha256 "248e2e04e70befe956273b868b6e53494587db00de0fbba28ad48f93b3347cb5"
+      url "https://github.com/amalshaji/portr/releases/download/v1.0.14/portr_1.0.14_Linux_x86_64.zip"
+      sha256 "aaf345ab1f12555c862c90f279a5a33216c465c7626b869ddc149725047f68c4"
       define_method(:install) do
         bin.install "portr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amalshaji/portr/releases/download/v1.0.13/portr_1.0.13_Linux_arm64.zip"
-      sha256 "d3baa30db79f12967e8bb368b9799315f6aef9c8262826f0f145a678ef3cd4c4"
+      url "https://github.com/amalshaji/portr/releases/download/v1.0.14/portr_1.0.14_Linux_arm64.zip"
+      sha256 "c197d859e1318563a634537d82a35d3fd230031afdb6ea946760931eb0f7e5cb"
       define_method(:install) do
         bin.install "portr"
       end
