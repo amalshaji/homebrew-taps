@@ -1,6 +1,6 @@
 cask "dbcooper" do
-  version "0.0.59"
-  sha256 "eba62b4b708e38e2aaac051af9fcdacc8d28ccb3119b8085ab7d238fa60734cb"
+  version "0.0.60"
+  sha256 "cfe6887aaa7e13bd111fd859e9846e09fb746236f67ee3ffef5fd657957219fc"
 
   url "https://github.com/amalshaji/dbcooper/releases/download/v#{version}/DBcooper_#{version}_aarch64.dmg"
   name "DBcooper"
