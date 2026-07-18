@@ -1,6 +1,6 @@
 cask "dictator" do
-  version "0.6.0"
-  sha256 "efe1cd424bb706e0e9626e3b9725a9e7f9d0488b8813373b9fa047e3a9e22b82"
+  version "0.6.1"
+  sha256 "93bfb938e1d7f0b7c533ecb2d6e8524b29a73f15470908e74498b02b557770b1"
 
   url "https://github.com/amalshaji/dictator/releases/download/v#{version}/Dictator-#{version}-universal.dmg"
   name "Dictator"
